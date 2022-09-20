@@ -87,9 +87,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.2, random
 
 dalam skrip tersebut data `X_train`, `X_test`, `y_train`, dan `y_test` dipisah kemudian diberikan parameter `test_size` berupa bilangan float `0.2` dan `random_state` berfungsi untuk melakukan pengacakan terhadap data sebelum dipisah
 
-## Proses Train Multiple Data
+## Proses Train Data
 
 ---
+
+Setelah dilakukan pemisahan data, maka tahap selanjutnya adalah proses training data dengan LinearRegression
 
 ```py
 from sklearn.linear_model import LinearRegression
@@ -103,6 +105,8 @@ y_pred = mlr.predict(X_test)
 ## Penggabungan Data
 
 ---
+
+Setelah dilakukan proses training pada data, kemudian data yang masih terpisah, disatukan dengan fitur numpy yakni `concatenate`
 
 ```py
 import numpy as np
